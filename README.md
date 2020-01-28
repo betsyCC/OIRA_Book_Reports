@@ -1,37 +1,7 @@
-## Welcome to GitHub Pages
+# Enrollment BookDown DRAFT
+ 
+This electronic book is a draft for testing out options for posting accessible data tables and reports for [CUNY's Office of Institutional Research](https://www.cuny.edu/about/administration/offices/oira/institutional/).  
 
-You can use the [editor on GitHub](https://github.com/betsyCC/OIRA_Book_Reports/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This site was created using [RStudio](https://rstudio.com/) and [bookdown](https://bookdown.org/) using the default settings in the [Minimal Book Example](https://github.com/rstudio/bookdown-demo), as a base and then customizing it to be more in line with CUNY's branding by altering the CSS.  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/betsyCC/OIRA_Book_Reports/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Data tables were created using the following R packages and functions: [kableExtra](https://haozhu233.github.io/kableExtra/awesome_table_in_html.html), [DT](https://rstudio.github.io/DT/), and a SUPER helpful function for writing *accessible* html tables that was written by [\@dcruvolo](https://community.rstudio.com/u/dcruvolo) and can be found on the RStudio Community post ['Create accessible HTML tables in RStudio?'](https://community.rstudio.com/t/re-create-accessible-html-tables-in-rstudio/47173).

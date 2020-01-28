@@ -1,0 +1,171 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #1d3a83;
+}
+
+h6 {
+  color: #fff;
+  font-size: 6px;
+  padding: 0px;
+}
+
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+a:link, a:visited {
+  outline: none;
+  color: #1d3a83;
+}
+a:hover, a:active {
+  color: #005daa;
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+div {
+  overflow: auto;
+}
+
+table {
+	font-size: 0.75em;
+}
+
+td {
+	padding: 0px 4px;
+	/*min-width: 5em;
+	width: 9%;*/
+}
+
+.datatable {
+	width: 100%;
+	border-spacing: 0;
+	text-align: left;
+	font-size: 0.75em;
+	overflow: auto;
+}
+.datatable caption {
+	text-align: left;
+	font-size: 1.5em;
+	margin: 8px 0;
+	color: #1d3a83;
+	font-weight: 600;
+}
+.datatable thead tr th {
+	font-weight: 600;
+	padding: 2px 4px;
+	border-bottom: 1px solid #1d3a83;
+	color: #fff;
+	background: #314875;
+	text-align: center;
+}
+.datatable tbody tr th {
+	font-weight: 600;
+	padding: 0px 4px;
+	color: #1d3a83;
+	min-width: 5em;
+}
+.datatable tbody tr td {
+	font-weight: 400;
+	padding: 0px 4px;
+	text-align: right;
+	/*width: 9%;*/
+}
+
+/* http://rpbouman.blogspot.com/2015/04/css-tricks-for-conditional-formatting.html */
+/* make the cells output the value of their datavalue attribute */
+.datatable tbody tr td:after {
+    content: attr(datavalue);
+    }
+    
+/* hide the output if the datavalue is equal to "0" by formatting color to match background */
+.datatable tbody tr td[datavalue="0"]:after {
+    color: #fff;
+    }
+	
+.datatable tbody tr:nth-child(even) td[datavalue="0"]:after {
+	color: #f0f3f7;
+}
+
+.datatable tbody tr:hover td[datavalue="0"]:after {
+	color: #f5f5f5;
+}
+
+.datatable tbody tr[subtotals="yes"] th { 
+	font-weight: 600;
+	color: #fff;
+	background: #4e6694;
+}
+
+.datatable tbody tr[subtotals="yes"] td { 
+	font-weight: 600;
+	color: #fff;
+	background: #4e6694;
+}
+
+.datatable tbody tr[subtotals="yes"] td[datavalue="0"]:after { 
+	color: #4e6694;
+}
+
+.datatable tbody tr[totals="yes"] th { 
+	font-weight: 600;
+	color: #fff;
+	background: #314875;
+}
+
+.datatable tbody tr[totals="yes"] td { 
+	font-weight: 600;
+	color: #fff;
+	background: #314875;
+}
+
+.datatable tbody tr[totals="yes"] td[datavalue="0"]:after { 
+	color: #314875;
+}
+
+.datatable tbody tr:nth-child(even) {
+	background-color: #f0f3f7;
+}
+.datatable tbody tr:hover {
+	background-color: #f5f5f5;
+}
+
+/* https://davidruvolo51.github.io/shinytutorials/tutorials/responsive-tables/#work-function-main */
+.datatable .hidden-colname {
+    display: inline-block;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
