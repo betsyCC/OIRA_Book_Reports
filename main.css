@@ -12,24 +12,30 @@ body {
   -moz-font-feature-settings: "liga" on;
 }
 
+.book .book-body .page-wrapper .page-inner {
+  max-width: 90%;
+}
+
 h1,
 h2,
 h3,
 h4,
-h5 {
-  color: #1d3a83;
-}
-
+h5,
 h6 {
-  color: #fff;
-  font-size: 6px;
-  padding: 0px;
+  color: #1d3a83;
 }
 
 p.caption {
   color: #777;
   margin-top: 10px;
 }
+
+p.accessibility_instructions {
+  color: #fff;
+  font-size: 6px;
+  padding: 0px;
+}
+
 p code {
   white-space: inherit;
 }
@@ -59,6 +65,7 @@ div {
 
 table {
 	font-size: 0.75em;
+	line-height: 1;
 }
 
 td {
@@ -73,6 +80,7 @@ td {
 	text-align: left;
 	font-size: 0.75em;
 	overflow: auto;
+	line-height: 1;
 }
 .datatable caption {
 	text-align: left;
@@ -168,4 +176,32 @@ td {
     width: 1px;
     height: 1px;
     overflow: hidden;
+}
+
+/* https://davidruvolo51.github.io/shinytutorials/tutorials/responsive-tables/#work-function-main */
+@media (max-width: 600px){
+    .datatable thead {
+        position: absolute;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+	
+    .datatable tbody tr th, .datatable tbody tr td {
+        display: block;
+		padding: 0px 4px;
+		text-align: left;
+		vertical-align: top;
+    }
+	
+    .datatable td .hidden-colname {
+        display: inline-block;
+        clip: auto;
+        width: 150px;
+        height: auto;
+        line-height: 1;
+		vertical-align: top;
+    }
 }
