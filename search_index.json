@@ -1,5 +1,5 @@
 [
-["index.html", "Enrollment_bookdown_DRAFT Office of Institutional Research", " Enrollment_bookdown_DRAFT Betsy Rosalen 2020-01-29 Office of Institutional Research "],
+["index.html", "Enrollment_bookdown_DRAFT Office of Institutional Research", " Enrollment_bookdown_DRAFT Betsy Rosalen 2020-01-30 Office of Institutional Research "],
 ["preface.html", "Preface", " Preface This electronic book is a draft for testing out options for posting accessible data tables and reports for CUNY’s Office of Institutional Research. This site was created using RStudio and bookdown using the default settings in the Minimal Book Example, as a base and then customizing it to be more in line with CUNY’s branding by altering the CSS. Data tables were created using the following R packages and functions: kableExtra, DT, and a SUPER helpful function for writing accessible html tables that was written by @dcruvolo and can be found on the RStudio Community post ‘Create accessible HTML tables in RStudio?’. "],
 ["current-student-data-book-by-subject.html", "Current Student Data Book By Subject", " Current Student Data Book By Subject "],
 ["academic-program-reports-fall-2018.html", "Chapter 1 Academic Program Reports – Fall 2018 ", " Chapter 1 Academic Program Reports – Fall 2018 "],

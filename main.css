@@ -1,111 +1,194 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  position: relative;
+	margin: 0;
+	padding: 0;
+	position: relative;
 }
 
 body {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "liga" on;
 }
 
 .book .book-body .page-wrapper .page-inner {
-  max-width: 80%;
+	max-width: 80%;
 }
 
+/* ul.summary {
+	color: #ffffff;
+	background-color: #1d3a83;
+}
+ */
+ 
 code {
-  background-color: rgba(0, 0, 0, 0.02);
+	background-color: rgba(0, 0, 0, 0.02);
 }
 
 div {
-  overflow: auto;
+	overflow: auto;
 }
 
 p.caption {
-  color: #777;
-  margin-top: 10px;
+	color: #777;
+	margin-top: 10px;
 }
 p.accessibility_instructions {
-  color: #fff;
-  font-size: 6px;
-  padding: 0px;
+	color: #fff;
+	font-size: 1px;
+	padding: 0px;
 }
 p.flushright {
-  text-align: right;
+	text-align: right;
 }
 
 p code {
-  white-space: inherit;
+	white-space: inherit;
 }
 pre {
-  word-break: normal;
-  word-wrap: normal;
+	word-break: normal;
+	word-wrap: normal;
 }
 pre code {
-  white-space: inherit;
+	white-space: inherit;
 }
 
 blockquote > p:last-child {
-  text-align: right;
+	text-align: right;
 }
 blockquote > p:first-child {
-  text-align: inherit;
+	text-align: inherit;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  color: #1d3a83;
+	font-weight: normal;
+	color: #1d3a83;
 }
 h1.title {
-  font-weight: 700;
+	font-weight: 700;
 }
 .level1 h1 {
-  border-bottom: 1px solid;
+	border-bottom: 1px solid;
 }
 .header-section-number {
-  padding-right: .2em;
-  font-weight: 500;
+	padding-right: .2em;
+	font-weight: 500;
 }
 .level1 .header-section-number {
-  display: inline-block;
-  border-bottom: 3px solid;
+	display: inline-block;
+	border-bottom: 3px solid;
 }
 .smallcaps {
-  font-variant: small-caps;
+	font-variant: small-caps;
 }
 .book .book-body .page-wrapper .page-inner section.normal strong {
-  font-weight: 600;
+	font-weight: 600;
 }
 
 a:link, a:visited {
-  outline: none;
-  color: #1d3a83;
+	outline: none;
+	color: #1d3a83;
 }
 a:hover, a:active {
-  color: #005daa;
+	color: #005daa;
 }
 
-table {
+
+.book .book-body .page-wrapper .page-inner section.normal table {
+	display: table;
+	width: 100%;
+	margin: 0px auto;
+	border: none;
+	padding: 2px 4px;
+	font-style: normal;
+    font-weight: 400;
 	font-size: 0.75em;
 	line-height: 1;
+	text-align: left;
+	overflow: auto;
+}
+.book .book-body .page-wrapper .page-inner section.normal table td, 
+.book .book-body .page-wrapper .page-inner section.normal table th,
+.book .book-body .page-wrapper .page-inner section.normal table tr {
+	padding: 2px 4px;
+	border: none;
+}
+.book .book-body .page-wrapper .page-inner section.normal table caption {
+	text-align: left;
+	font-size: 1.5em;
+	margin: 8px 0;
+	color: #1d3a83;
+	font-weight: 600;
+}
+.book .book-body .page-wrapper .page-inner section.normal table thead tr th {
+	font-weight: 600;
+	padding: 3px 6px;
+	border-bottom: 1px solid #1d3a83;
+	color: #fff;
+	background: #314875;
+	text-align: center;
+}
+.book .book-body .page-wrapper .page-inner section.normal table tbody tr th {
+	font-weight: 600;
+	color: #1d3a83;
+	min-width: 5em;	
+	padding: 2px 4px;
+}
+.book .book-body .page-wrapper .page-inner section.normal table tbody tr td {
+	font-weight: 400;
+	text-align: right;
+	padding: 2px 4px;
+	min-width: 8%;
+}
+.book .book-body .page-wrapper .page-inner section.normal table tr {
+	background-color:#fff;
+}
+.book .book-body .page-wrapper .page-inner section.normal table tr:nth-child(even) {
+	background-color: #f0f3f7;
+}
+.book .book-body .page-wrapper .page-inner section.normal table tr:hover {
+	background-color: #f5f5f5;
+}
+.book .book-body .page-wrapper .page-inner section.normal table tbody tr[subtotals="yes"] th { 
+	font-weight: 600;
+	color: #fff;
+	background: #4e6694;
+}
+.book .book-body .page-wrapper .page-inner section.normal table tbody tr[subtotals="yes"] td { 
+	font-weight: 600;
+	color: #fff;
+	background: #4e6694;
+}
+.book .book-body .page-wrapper .page-inner section.normal table tbody tr[subtotals="yes"] td[datavalue="0"]:after { 
+	color: #4e6694;
+}
+.book .book-body .page-wrapper .page-inner section.normal table tbody tr[totals="yes"] th { 
+	font-weight: 600;
+	color: #fff;
+	background: #314875;
+}
+.book .book-body .page-wrapper .page-inner section.normal table tbody tr[totals="yes"] td { 
+	font-weight: 600;
+	color: #fff;
+	background: #314875;
+}
+.book .book-body .page-wrapper .page-inner section.normal table tbody tr[totals="yes"] td[datavalue="0"]:after { 
+	color: #314875;
 }
 
-td {
-	padding: 0px 4px;
-	/*min-width: 5em;
-	width: 9%;*/
-}
 
 .datatable {
+	font-style: normal;
+    font-weight: 400;
+	font-size: 0.75em;
+	line-height: 1;
+	padding: 2px 4px;
 	width: 100%;
+	margin: 0px auto;
 	border-spacing: 0;
 	text-align: left;
-	font-size: 0.75em;
 	overflow: auto;
-	line-height: 1;
 }
 .datatable caption {
 	text-align: left;
@@ -116,7 +199,7 @@ td {
 }
 .datatable thead tr th {
 	font-weight: 600;
-	padding: 2px 4px;
+	padding: 3px 6px;
 	border-bottom: 1px solid #1d3a83;
 	color: #fff;
 	background: #314875;
@@ -124,15 +207,13 @@ td {
 }
 .datatable tbody tr th {
 	font-weight: 600;
-	padding: 0px 4px;
 	color: #1d3a83;
 	min-width: 5em;
 }
 .datatable tbody tr td {
 	font-weight: 400;
-	padding: 0px 4px;
 	text-align: right;
-	/*width: 9%;*/
+	min-width: 8%;
 }
 
 /* http://rpbouman.blogspot.com/2015/04/css-tricks-for-conditional-formatting.html */
