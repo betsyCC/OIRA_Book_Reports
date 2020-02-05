@@ -12,16 +12,67 @@ body {
 	-moz-font-feature-settings: "liga" on;
 }
 
+/* @font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather'), local('Merriweather-Regular'),
+       url('../fonts/merriweather-v13-latin-regular.woff2') format('woff2'),
+       url('../fonts/merriweather-v13-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'),
+       url('../fonts/lato-v11-latin-regular.woff2') format('woff2'),
+       url('../fonts/lato-v11-latin-regular.woff') format('woff');
+} */
+
+/* This should change the font and use google fonts, but it's not working!!! */
+@import url('https://fonts.googleapis.com/css?family=Lato|Merriweather&display=swap');
+.book.font-family-0 {
+  font-family: "Merriweather", Georgia, serif;
+}
+.book.font-family-1 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* TOC width */
+.book .book-summary{left:-400px; width:400px;}
+@media (min-width: 600px) {.book.with-summary .book-header.fixed {left: 400px;}.book.with-summary .book-body{left:400px}}
+@media (max-width: 600px) {.book.with-summary .book-header.fixed {min-width: 400px;}.book.with-summary .book-body {min-width: 400px;}}
+
+/* Width of body text */
 .book .book-body .page-wrapper .page-inner {
 	max-width: 80%;
 }
 
-/* ul.summary {
-	color: #ffffff;
-	background-color: #1d3a83;
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	color: #1d3a83;
 }
- */
- 
+h1.title {
+	font-weight: 700;
+}
+.level1 h1 {
+	border-bottom: 1px solid;
+}
+.header-section-number {
+	padding-right: .2em;
+	font-weight: 500;
+}
+.level1 .header-section-number {
+	display: inline-block;
+	border-bottom: 3px solid;
+}
+.smallcaps {
+	font-variant: small-caps;
+}
+.book .book-body .page-wrapper .page-inner section.normal strong {
+	font-weight: 600;
+}
+
 code {
 	background-color: rgba(0, 0, 0, 0.02);
 }
@@ -61,31 +112,6 @@ blockquote > p:first-child {
 	text-align: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
-	color: #1d3a83;
-}
-h1.title {
-	font-weight: 700;
-}
-.level1 h1 {
-	border-bottom: 1px solid;
-}
-.header-section-number {
-	padding-right: .2em;
-	font-weight: 500;
-}
-.level1 .header-section-number {
-	display: inline-block;
-	border-bottom: 3px solid;
-}
-.smallcaps {
-	font-variant: small-caps;
-}
-.book .book-body .page-wrapper .page-inner section.normal strong {
-	font-weight: 600;
-}
-
 a:link, a:visited {
 	outline: none;
 	color: #1d3a83;
@@ -93,7 +119,6 @@ a:link, a:visited {
 a:hover, a:active {
 	color: #005daa;
 }
-
 
 .book .book-body .page-wrapper .page-inner section.normal table {
 	display: table;
