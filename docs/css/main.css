@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Merriweather&display=swap');
 /*<link href="https://fonts.googleapis.com/css?family=Lato|Merriweather&display=swap" rel="stylesheet">*/
 
-.book .font-family-0 {
+.book.font-family-0 {
   font-family: "Merriweather", Georgia, serif;
 }
-.book .font-family-1 {
+.book.font-family-1 {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
